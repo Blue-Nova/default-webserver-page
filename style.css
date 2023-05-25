@@ -5,18 +5,61 @@
     color: white;
 }
 html {
-    background-color: rgb(2,0,36);
-    background: linear-gradient(168deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 61%, rgba(129,0,198,1) 100%);
+    background-color: rgb(0,1,36);
+    background: linear-gradient(168deg, rgba(0,1,36,1) 44%, rgba(9,9,121,1) 72%, rgba(58,5,152,1) 100%);
     min-height: 100vh;
 }
 body{
     height: 100%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
 }
 h1,h2,p{
     text-align: center;
     letter-spacing: 0.5rem;
 }
 h1{
+    margin: auto;
     font-size: 5rem;
-    margin-top: 5vh;
+}
+.blackhole-outer{
+    z-index: -99;
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.blackhole-inner{
+    position: relative;
+    top: -40vh;
+    left: -90vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,12,106);
+    background: radial-gradient(circle, rgb(8, 0, 78) 23%, rgba(58,5,152,1) 35%, rgba(0,0,0,0) 40%);
+}
+
+@media only screen and (max-width: 1300px) {
+    .blackhole-inner{
+        left: -50vh;
+        height: 130%;
+    }
+}
+@media only screen and (max-width: 700px) {
+        .blackhole-inner{
+            left: -30vh;
+            height: 130%;
+        }
+}
+@media only screen and (max-width: 500px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    h2,p{
+        font-size: 1rem;
+    }
 }
