@@ -15,6 +15,7 @@ body{
 header{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 20vh;
 }
@@ -22,9 +23,20 @@ h1,h2,p{
     text-align: center;
     letter-spacing: 0.5rem;
 }
-h1{
+h1,h2{
     margin: auto;
     font-size: 5rem;
+}
+hr{
+    margin: auto;
+    width: 60vw;
+}
+.content{
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .blackhole-outer{
     z-index: -99;
@@ -62,8 +74,6 @@ h1{
     h2,p{
         font-size: 1rem;
     }
-}
-@media only screen and (max-width: 400px) {
     .blackhole-inner{
         height: -20vh;
         left: -15vh;
