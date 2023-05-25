@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+html {
+    background-color: rgb(2,0,36);
+    background: linear-gradient(168deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 61%, rgba(129,0,198,1) 100%);
+    min-height: 100vh;
+}
+body{
+    height: 100%;
+}
+h1,h2,p{
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+h1{
+    font-size: 5rem;
+    margin-top: 5vh;
+}
