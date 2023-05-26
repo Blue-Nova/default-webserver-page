@@ -7,10 +7,10 @@
 html {
     background-color: rgb(0,1,36);
     background: linear-gradient(168deg, rgba(0,1,36,1) 24%, rgba(9,9,121,1) 72%, rgb(127, 5, 152) 100%);
-    min-height: 100vh;
+    height: 100%;
 }
 body{
-    height: 100%;
+    min-height: 100%;
 }
 header{
     display: flex;
@@ -41,47 +41,40 @@ hr{
 }
 .blackhole-outer{
     z-index: -99;
-    position: absolute;
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
+    position:fixed;
+    height: 1300px;
+    width: 1300px;
 }
 .blackhole-inner{
     position: relative;
-    top: -40vh;
-    left: -90vh;
+    top: -40%;
+    left: -35%;
     height: 100%;
     width: 100%;
     background-color: rgb(0,12,106);
     background: radial-gradient(circle, rgb(8, 0, 78) 23%, rgb(97, 22, 167) 35%, rgba(0,0,0,0) 40%);
 }
-
 @media only screen and (max-width: 1300px) {
-    .blackhole-inner{
-        left: -50vh;
-        height: 130%;
+    .blackhole-outer{
+        height: 1000px;
+        width: 1000px;
     }
 }
-@media only screen and (max-width: 700px) {
-        .blackhole-inner{
-            left: -30vh;
-            height: 130%;
-        }
+@media only screen and (max-width: 700px){
+    .blackhole-outer{
+        height: 1000px;
+        width: 1000px;
+    }
 }
 @media only screen and (max-width: 500px) {
+    .blackhole-outer{
+        height: 600px;
+        width: 600px;
+    }
     h1{
         font-size: 2.5rem;
     }
     h2,p{
         font-size: 1rem;
-    }
-    .blackhole-inner{
-        height: -20vh;
-        left: -15vh;
-        height: 130%;
-    }
-    .blackhole-outer{
-        height: 80vh;
-        width: 100vw;
     }
 }
