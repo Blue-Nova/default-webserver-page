@@ -39,11 +39,14 @@ hr{
     max-width: 500px;
 }
 .content{
-    margin-top: 25vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.content div{
+    display: inline-block
 }
 .blackhole-outer{
     z-index: -99;
@@ -59,6 +62,9 @@ hr{
     width: 100%;
     background-color: rgb(0,12,106);
     background: radial-gradient(circle, rgb(8, 0, 78) 23%, rgb(97, 22, 167) 35%, rgba(0,0,0,0) 40%);
+}
+img{
+    width: 100px;
 }
 @media only screen and (max-width: 1300px) {
     .blackhole-outer{
@@ -76,6 +82,9 @@ hr{
     .blackhole-outer{
         height: 600px;
         width: 600px;
+    }
+    img{
+        width: 50px;
     }
     h1{
         font-size: 2.5rem;
