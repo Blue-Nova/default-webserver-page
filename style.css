@@ -27,11 +27,9 @@ header{
 }
 h1,h2,p{
     text-align: center;
-    letter-spacing: 0.5rem;
 }
-h1,h2{
+h1{
     margin: auto;
-    font-size: 5rem;
 }
 hr{
     margin: auto;
@@ -64,7 +62,47 @@ hr{
     background: radial-gradient(circle, rgb(8, 0, 78) 23%, rgb(97, 22, 167) 35%, rgba(0,0,0,0) 40%);
 }
 img{
-    width: 100px;
+    width: 5vw;
+}
+@media screen and (max-width: 200px) {
+    html {
+        font-size: 20px;
+    }
+    p{
+        font-size: 8px;
+    }
+    h2{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 200px) {
+    html {
+        font-size: calc(20px + 40 * ((100vw - 200px) / 1500));
+    }
+    p{
+        font-size: calc(8px + 30 * ((100vw - 200px) / 1500));
+    }
+    h2{
+        font-size: calc(10px + 35 * ((100vw - 200px) / 1500));
+    }
+}
+@media screen and (min-width: 1500px) {
+    html {
+        font-size: 60px;
+    }
+    p{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (min-width: 4000px) {
+    .blackhole-outer{
+        height: 3000px;
+        width: 3000px;
+    }
 }
 @media only screen and (max-width: 1300px) {
     .blackhole-outer{
@@ -82,14 +120,5 @@ img{
     .blackhole-outer{
         height: 600px;
         width: 600px;
-    }
-    img{
-        width: 50px;
-    }
-    h1{
-        font-size: 2.5rem;
-    }
-    h2,p{
-        font-size: 1rem;
     }
 }
