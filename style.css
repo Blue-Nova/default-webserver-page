@@ -1,124 +1,98 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+
 html {
-    background-color: rgb(0,1,36);
+    background-color: rgb(0, 1, 36);
     height: 100%;
 }
-.background{
+
+.background {
     z-index: -99;
     height: 100%;
     width: 100%;
     position: fixed;
-    background: linear-gradient(168deg, rgba(0,1,36,1) 24%, rgba(9,9,121,1) 72%, rgb(127, 5, 152) 100%);
+    background: linear-gradient(168deg, rgba(0, 1, 36, 1) 24%, rgba(9, 9, 121, 1) 72%, rgb(127, 5, 152) 100%);
 }
-body{
+
+body {
     min-height: 100%;
 }
-header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 20vh;
-}
-h1,h2,p{
+
+h1,
+h2,
+p {
     text-align: center;
 }
-h1{
-    margin: auto;
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+    height: 20vh;
 }
-hr{
-    margin: auto;
-    width: 60vw;
-    max-width: 500px;
+
+header div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
 }
-.content{
+
+hr {
+    width: calc(100% + 2.5vw);
+    border: calc(1px + (0.5*(100vw/1000))) solid white;
+}
+
+.content {
     min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.content div{
+
+.content div {
     display: inline-block
 }
-.blackhole-outer{
+
+.blackhole-outer {
     z-index: -99;
-    position:fixed;
-    height: 1300px;
-    width: 1300px;
+    position: fixed;
+    height: calc(60vh + (100vw*0.6));
+    width: calc(60vw + (100vh*0.6));
 }
-.blackhole-inner{
+
+.blackhole-inner {
     position: relative;
     top: -40%;
     left: -35%;
     height: 100%;
     width: 100%;
-    background-color: rgb(0,12,106);
-    background: radial-gradient(circle, rgb(8, 0, 78) 23%, rgb(97, 22, 167) 35%, rgba(0,0,0,0) 40%);
-}
-img{
-    width: 5vw;
-}
-@media screen and (max-width: 200px) {
-    html {
-        font-size: 20px;
-    }
-    p{
-        font-size: 8px;
-    }
-    h2{
-        font-size: 10px;
-    }
-}
-@media screen and (min-width: 200px) {
-    html {
-        font-size: calc(20px + 40 * ((100vw - 200px) / 1500));
-    }
-    p{
-        font-size: calc(8px + 30 * ((100vw - 200px) / 1500));
-    }
-    h2{
-        font-size: calc(10px + 35 * ((100vw - 200px) / 1500));
-    }
-}
-@media screen and (min-width: 1500px) {
-    html {
-        font-size: 60px;
-    }
-    p{
-        font-size: 38px;
-    }
-    h2{
-        font-size: 45px;
-    }
+    background-color: rgb(0, 12, 106);
+    background: radial-gradient(circle, rgb(8, 0, 78) 23%, rgb(97, 22, 167) 35%, rgba(0, 0, 0, 0) 40%);
 }
 
-@media only screen and (min-width: 4000px) {
-    .blackhole-outer{
-        height: 3000px;
-        width: 3000px;
-    }
+img {
+    width: 5vw;
 }
-@media only screen and (max-width: 1300px) {
-    .blackhole-outer{
-        height: 1000px;
-        width: 1000px;
-    }
+
+html {
+    font-size: calc(0px + (8/200)*100vw);
 }
-@media only screen and (max-width: 700px){
-    .blackhole-outer{
-        height: 1000px;
-        width: 1000px;
-    }
+
+h1 {
+    font-size: calc(0px + (30/200)*100vw);
 }
-@media only screen and (max-width: 500px) {
-    .blackhole-outer{
-        height: 600px;
-        width: 600px;
-    }
+
+h2 {
+    font-size: calc(0px + (10/200)*100vw);
 }
