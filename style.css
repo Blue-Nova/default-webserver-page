@@ -85,14 +85,29 @@ img {
     width: 5vw;
 }
 
+
 html {
-    font-size: calc(0px + (8/200)*100vw);
+    font-size: calc(0px + (4/100)*100vw);
 }
 
 h1 {
-    font-size: calc(0px + (30/200)*100vw);
+    font-size: calc(0px + (15/100)*100vw);
 }
 
 h2 {
-    font-size: calc(0px + (10/200)*100vw);
+    font-size: calc(0px + (5/100)*100vw);
+}
+
+@media (orientation:landscape) {
+    html {
+        font-size: calc(0px + (4/100)*100vh);
+    }
+
+    h1 {
+        font-size: calc(0px + (15/100)*100vh);
+    }
+
+    h2 {
+        font-size: calc(0px + (5/100)*100vh);
+    }
 }
