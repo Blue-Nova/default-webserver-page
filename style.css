@@ -110,4 +110,8 @@ h2 {
     h2 {
         font-size: calc(0px + (5/100)*100vh);
     }
+
+    img {
+        width: 5vh;
+    }
 }
