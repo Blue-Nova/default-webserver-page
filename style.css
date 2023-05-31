@@ -48,7 +48,7 @@ header div {
 }
 
 hr {
-    width: calc(100% + 2.5vw);
+    width: calc(100% + 1.5vw);
     border: calc(1px + (0.5*(100vw/1000))) solid white;
 }
 
@@ -91,7 +91,7 @@ html {
 }
 
 h1 {
-    font-size: calc(0px + (15/100)*100vw);
+    font-size: calc(0px + (8/100)*100vw);
 }
 
 h2 {
@@ -104,7 +104,7 @@ h2 {
     }
 
     h1 {
-        font-size: calc(0px + (15/100)*100vh);
+        font-size: calc(0px + (8/100)*100vh);
     }
 
     h2 {
